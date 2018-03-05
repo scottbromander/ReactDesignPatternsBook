@@ -158,4 +158,5 @@ The first is that it takes a ton of code to get a simple React project up and ru
 
 The argument that is being made here, is that the project should only start to pull in dependancies as you need them. Which obviously I do not disagree with, but if you have desigend your application ahead of time, you should know how to handle each of these challenges. Setting up the project, getting the builders up and running, pulling in the tools, and so on, should really be done right away (in my opinion). That way the team is all working with the same tooling and not everyone needs to know the entire setup and build process. Keep people focused in their discipline is important. -Personal opinion, `</rant>`
 
+Yup, the author just went down the `create-react-app` route.
 
