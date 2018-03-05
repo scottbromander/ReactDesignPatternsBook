@@ -132,4 +132,30 @@ render() {
 }
 ```
 
+"The best way to learn a new framework is to build small projects", totally agree.
+
+Another difficult pill to swallow is moving Styling into the component as well. The end goal is to perfectly encapsulate a component to live by itself. 
+
+Example:
+```
+var divStyle = {
+     color: 'white',
+     backgroundImage: 'url(' + imgUrl + ')',
+     WebkitTransition: 'all', // note the capital 'W' here
+     msTransition: 'all' // 'ms' is the only lowercase vendor prefix
+};
+   ReactDOM.render(
+    <div style={divStyle}>Hello World!</div>,
+    mountNode
+);
+```
+
+`#CSSinJS`, covered more in Chapter 7
+
+## Common Misconceptions
+
+The first is that it takes a ton of code to get a simple React project up and running (Note, I know where the author is going with this, and I do not agree. They are about to go down the `'type="text/babel"'` and `create-react-app` route, which is good for toy apps, but does not seem to be good for production)
+
+The argument that is being made here, is that the project should only start to pull in dependancies as you need them. Which obviously I do not disagree with, but if you have desigend your application ahead of time, you should know how to handle each of these challenges. Setting up the project, getting the builders up and running, pulling in the tools, and so on, should really be done right away (in my opinion). That way the team is all working with the same tooling and not everyone needs to know the entire setup and build process. Keep people focused in their discipline is important. -Personal opinion, </rant>
+
 
