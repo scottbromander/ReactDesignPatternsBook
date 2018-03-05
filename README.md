@@ -105,4 +105,31 @@ called `reconciliation`, and it is used by both React DOM and React Native to cr
 interfaces of their respective platforms.
 
 ### Unlearning Everything
+React can be tricky because it forces developers to not follow common thought patterns, such as 'seperation of concerns'.
+We can see this in our use of jQuery and even Angular. View and Logic are two different things. One updates the other.
+In React, they are much more tightly coupled. 
+
+But the truth is that the separation of concerns was a bit of an illusion. 
+
+If you look at a Templating engine (let's say Handlebars), you notice that some logic like loops make it into the DSL
+(Domain Specific Language). 
+
+React tries to take a step and puts templates where they belong, next to the logic. React tries to get everything organized
+into small bits of functionality called `components`. 
+
+A framework should not tell you how to separate concerns, because each application has their own. Only the developers should decide how to limit the boundries of the applications they are developing. 
+
+Component-based development changes the approach drastically for the way we write web applications.
+
+Example component's render method:
+
+```
+render() {
+     return (
+       <button style={{ color: 'red' }} onClick={this.handleClick}>
+         Click me!
+</button> )
+}
+```
+
 
