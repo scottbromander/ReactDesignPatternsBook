@@ -152,7 +152,7 @@ var divStyle = {
 
 `#CSSinJS`, covered more in Chapter 7
 
-## Common Misconceptions
+### Common Misconceptions
 
 The first is that it takes a ton of code to get a simple React project up and running (Note, I know where the author is going with this, and I do not agree. They are about to go down the `'type="text/babel"'` and `create-react-app` route, which is good for toy apps, but does not seem to be good for production)
 
@@ -160,3 +160,5 @@ The argument that is being made here, is that the project should only start to p
 
 Yup, the author just went down the `create-react-app` route.
 
+
+## Chapter 2 - Clean Up Your Code
